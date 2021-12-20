@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HomeListItem">
+        <attr name="home_item_imageId" format="reference"/>
+        <attr name="home_item_title" format="string"/>
+        <attr name="home_item_sale" format="string"/>
+        <attr name="home_item_delever" format="string"/>
+        <attr name="home_item_deleverTime" format="string"/>
+        <attr name="home_item_lable" format="string"/>
+    </declare-styleable>
+</resources>

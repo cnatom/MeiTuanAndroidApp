@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_list_item_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginCard"
+    android:background="@drawable/shape_corner"
+    android:layout_marginTop="@dimen/divider"
+    android:orientation="horizontal"
+    android:padding="@dimen/paddingCard">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="100sp"
+        android:layout_weight="3"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/home_list_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_preview1"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15sp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/home_list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_item_title"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/divider">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_list_item_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月售1023"
+                    android:textSize="@dimen/home_item_subTitle" />
+
+                <TextView
+                    android:id="@+id/home_list_item_deliver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="起送￥20 | 配送￥5"
+                    android:textSize="@dimen/home_item_subTitle" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/home_list_item_deliver_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/home_item_subTitle"
+                    android:text="配送约30分钟"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            app:cardElevation="0dp"
+            app:contentPadding="2sp"
+            app:cardCornerRadius="2sp"
+            app:cardBackgroundColor="@color/lable_background">
+            <TextView
+                android:id="@+id/home_list_item_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广外大街饮品回头率第5名"
+                android:textColor="@color/lable_text"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

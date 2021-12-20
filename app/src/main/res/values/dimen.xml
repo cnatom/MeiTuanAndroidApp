@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--外边距内边距-->
+    <dimen name="marginCard">10sp</dimen>
+    <dimen name="paddingCard">10sp</dimen>
+    <dimen name="divider">5sp</dimen>
+<!--字体大小-->
+    <dimen name="home_item_title">18sp</dimen>
+    <dimen name="home_item_subTitle">14sp</dimen>
+<!--    圆角值-->
+    <dimen name="radius">10sp</dimen>
+</resources>

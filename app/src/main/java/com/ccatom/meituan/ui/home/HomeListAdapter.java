@@ -13,9 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.ccatom.meituan.MyApplication;
 import com.ccatom.meituan.R;
+import com.ccatom.meituan.bean.HomeListBean;
 import com.ccatom.meituan.ui.detail.DetailActivity;
 import com.squareup.picasso.Picasso;
 

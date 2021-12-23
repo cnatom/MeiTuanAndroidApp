@@ -9,7 +9,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.ccatom.meituan.ui.home.HomeListAdapter;
-import com.ccatom.meituan.ui.home.HomeListBean;
+import com.ccatom.meituan.bean.HomeListBean;
 import com.ccatom.meituan.util.StringRequestUTF;
 import com.google.gson.Gson;
 import java.util.List;

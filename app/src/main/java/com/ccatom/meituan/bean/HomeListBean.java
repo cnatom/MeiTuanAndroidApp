@@ -1,4 +1,4 @@
-package com.ccatom.meituan.ui.home;
+package com.ccatom.meituan.bean;
 
 
 import com.google.gson.annotations.SerializedName;

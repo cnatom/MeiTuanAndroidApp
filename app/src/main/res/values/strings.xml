@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MeiTuan</string>
+    <string name="icon_add">&#xe627;</string>
+    <string name="icon_mini">&#xe628;</string>
+    <string name="icon_delete">&#xe629;</string>
+
 </resources>

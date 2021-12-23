@@ -11,6 +11,7 @@ public class MyApplication extends Application {
         super.onCreate();
         context = getApplicationContext();
     }
+    //获取全局Context
     public static Context getContext(){
         return context;
     }

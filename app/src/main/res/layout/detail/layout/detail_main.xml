@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
@@ -26,7 +26,7 @@
 <!--                店家简介-->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="60sp"
@@ -125,33 +125,89 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:listitem="@layout/detail_item"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"/>
             </LinearLayout>
 
-        </ScrollView>
+        </androidx.core.widget.NestedScrollView>
 <!--        底栏-->
         <RelativeLayout
+            android:id="@+id/detail_bottom_sheet"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="bottom">
-
             <LinearLayout
                 android:gravity="bottom"
-                android:id="@+id/detail_bottombar"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="55sp"
                 android:background="#454545">
+                <!--            左边购物车按钮-->
+                <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/detail_shop_button"
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:padding="10sp"
+                            app:cardCornerRadius="100sp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="#454545">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:cardCornerRadius="100sp"
+                                app:cardBackgroundColor="#3090E8">
+                                <ImageView
+                                    android:layout_width="25sp"
+                                    android:layout_height="25sp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/shopping"/>
+                            </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <!--            标记点-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/detail_bottom_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginEnd="10sp"
+                        app:cardBackgroundColor="#FC5531"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="100sp">
+                        <TextView
+                            android:id="@+id/detail_bottom_dot_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginHorizontal="5sp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:text="5"/>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_weight="7"
                     android:layout_width="0dp"
-                    android:paddingStart="70sp"
                     android:layout_height="match_parent">
                     <TextView
+                        android:id="@+id/detail_bottom_price_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5sp"
-                        android:text="￥51"
+                        android:text="￥0"
+                        android:maxLength="6"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:textSize="18sp"/>
@@ -165,7 +221,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/detail_buy_button"
+                    android:id="@+id/detail_submit_button"
                     android:layout_weight="3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -180,47 +236,7 @@
                         android:textColor="@color/white"/>
                 </LinearLayout>
             </LinearLayout>
-<!--            左边购物车按钮-->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/detail_shop_icon"
-                android:layout_width="60sp"
-                android:layout_height="60sp"
-                android:layout_marginTop="-10sp"
-                app:cardCornerRadius="100sp"
-                app:cardElevation="0dp"
-                app:cardBackgroundColor="#454545"
-                android:layout_marginStart="10sp">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="6sp"
-                    app:cardCornerRadius="100sp"
-                    app:cardBackgroundColor="#3090E8">
-                    <ImageView
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_gravity="center"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/shopping"/>
-                </androidx.cardview.widget.CardView>
-            </androidx.cardview.widget.CardView>
-<!--            标记点-->
-            <androidx.cardview.widget.CardView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:layout_marginStart="50sp"
-                android:layout_marginTop="-10sp"
-                app:cardBackgroundColor="#FC5531"
-                app:cardElevation="0dp"
-                app:cardCornerRadius="100sp">
-                <TextView
-                    android:id="@+id/detail_bottom_dot"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:text="5"/>
-            </androidx.cardview.widget.CardView>
+
         </RelativeLayout>
 
     </RelativeLayout>

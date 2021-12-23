@@ -9,6 +9,7 @@ import com.android.volley.toolbox.StringRequest;
 
 import java.io.UnsupportedEncodingException;
 
+//自带的StringRequest编码有问题，故继承，使用utf-8优化
 public class StringRequestUTF extends StringRequest {
     public StringRequestUTF(int method, String url, Response.Listener<String> listener, @Nullable Response.ErrorListener errorListener) {
         super(method, url, listener, errorListener);
@@ -17,6 +18,7 @@ public class StringRequestUTF extends StringRequest {
     public StringRequestUTF(String url, Response.Listener<String> listener, @Nullable Response.ErrorListener errorListener) {
         super(url, listener, errorListener);
     }
+
 
     @Override
     @SuppressWarnings("DefaultCharset")

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300sp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="500sp">
+    <ImageView
+        android:id="@+id/detail_qr_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

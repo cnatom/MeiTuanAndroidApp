@@ -16,12 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeiTuan"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.detail.DetailActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ui.detail.DetailCart"></activity>
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTask"
-            android:label="美团">
+            android:label="美团"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

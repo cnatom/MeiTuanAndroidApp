@@ -1,7 +1,5 @@
 # 原生Android仿美团App
 
-[TOC]
-
 ## 简介
 
 写的第一个原生Android项目。

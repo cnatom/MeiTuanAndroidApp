@@ -55,7 +55,7 @@ python语言、Flask框架
 
 仓库链接：
 
-[https://github.com/cnatom/MeiTuanAndroidAppServer]:https://github.com/cnatom/MeiTuanAndroidAppServer
+[https://github.com/cnatom/MeiTuanAndroidAppServer](https://github.com/cnatom/MeiTuanAndroidAppServer)
 
 或者在终端中执行：
 
@@ -77,7 +77,7 @@ flask run
 
 仓库链接：
 
-[https://github.com/cnatom/MeiTuanAndroidApp]: https://github.com/cnatom/MeiTuanAndroidApp
+[https://github.com/cnatom/MeiTuanAndroidApp](https://github.com/cnatom/MeiTuanAndroidApp)
 
 或者在终端中执行：
 

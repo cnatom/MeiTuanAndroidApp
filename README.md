@@ -87,3 +87,5 @@ git clone https://github.com/cnatom/MeiTuanAndroidApp.git
 
 用`Android Studio`打开，运行即可。
 
+> 安卓模拟器需要修改127.0.0.1为10.0.2.2，详情:[https://developer.android.google.cn/studio/run/emulator-networking?hl=zh-cn#networkaddresses](https://developer.android.google.cn/studio/run/emulator-networking?hl=zh-cn#networkaddresses)
+
